@@ -91,7 +91,6 @@ def consultar(cpf):
 {C}Bairro: {B}{re.search('NOBAIRRO="(.*?)"', r).group(1).title()}
 {C}Cidade: {B}{re.search('NOMUNICIPIO="(.*?)"', r).group(1).title()}-{re.search('SGUF="(.*?)"', r).group(1)}
 {C}CEP: {B}{re.search('NRCEP="(.*?)"', r).group(1)}
-{C}NOME DO PAI: {B}re.search('NOPESSOAFISICA="(.*?)"', r).group(1).title()}
 ''')
     nova=input(f'{C}[{G}+{C}] Deseja realizar uma nova consulta?[{G}s{C}/{R}n{C}]: ').lower()
     if nova=='s' or nova=='sim':
